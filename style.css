@@ -1,0 +1,14 @@
+h2 {
+    background-color: blueviolet;
+    color: rgb(42, 161, 165);
+    text-align: center;
+}
+
+#extsel {
+    background-color: blueviolet;
+}
+
+h4 {
+    font-size: larger;
+    text-transform: uppercase;
+}

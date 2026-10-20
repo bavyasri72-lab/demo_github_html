@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        div p {
+            color: aquamarine;
+            background-color: blueviolet;
+        }
+
+        #parent>h1 {
+            color: red;
+        }
+
+        h1+p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        h1~p {
+            text-transform: uppercase;
+        }
+
+        .int {
+            background-color: rgb(222, 220, 245);
+        }
+
+        #idsel {
+            background-color: pink;
+        }
+
+        h3 {
+            background-color: aqua;
+        }
+
+        p {
+            background-color: aqua;
+            word-spacing: 5px;
+            font-size: 20px;
+            text-indent: 10px;
+            letter-spacing: 4px;
+        }
+
+        * {
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+
+    <center>
+        <h1>css</h1>
+    </center>
+
+    <h3 style=" background-color:black;color: aqua; font-size: 16px;">inline css</h3>
+    <p style=" background-color:black;color: aqua; font-size: 16px;">using inline css ,set bgcolor black and font color
+        aqua and 16px tall</p>
+    <h3>internal css</h3>
+    <p>the text is in black color and background aqua using internal css </p>
+
+    <h2>external css</h2>
+    <p id="extsel"> using external css set bgcolor of this p </p>
+    <h4>class selector</h4>
+    <p class="int"> by using class selector changed the bgcolor of this p tag</p>
+
+
+    <h4>id selector</h4>
+    <p id="idsel"> by using id seletor changed the bg color of this paragraph</p>
+
+
+    <center>combinators</center>
+    <h5>descendent selector(space)</h5>
+    <h5>child selector ></h5>
+    <h5>adjacent sibling selector(+)</h5>
+    <h5>grneral sibling selector(~)</h5>
+
+    <div id="parent">
+        <h1>child</h1>
+        <p>child2</p>
+        <div>
+            <h1>grandchild</h1>
+            <p>grandchild2</p>
+            <h3>gc3</h3>
+            <p>gc4</p>
+        </div>
+    </div>
+</body>
+
+</html>
