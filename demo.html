@@ -5,11 +5,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            background-color: pink;
+        }
+
+        h1:hover {
+            color: bisque;
+            background-color: blue;
+        }
+
+        a:link {
+            color: aqua;
+        }
+
+        a:visited {
+            color: brown;
+
+        }
+
+        a:active {
+            color: black;
+        }
+
+        input:focus {
+            outline: 2px dotted red;
+        }
+
+        .pseudo li:first-child {
+            color: blue;
+        }
+
+        button:not(.disabled) {
+            cursor: pointer;
+        }
+
+        #para::first-letter {
+            font-size: 20px;
+            color: blue
+        }
+
+        #para::first-line {
+            color: darkgreen;
+        }
+
+        ul li::marker {
+            color: red;
+            font-size: 30px;
+        }
+
+        ul li::before {
+            content: "🌐";
+        }
+
+        ul li::after {
+            content: "✋";
+        }
+
+        ::placeholder {
+            color: bisque;
+            background-color: black;
+        }
+    </style>
+
 </head>
 
+
+
+
 <body>
-    <h1>my first project</h1>
-    <p>Lorem ipsum dolor sit.</p>
+    <h1>pseudo class(:)</h1>
+    <p>h1 styled using hover</p><a href="https://www.w3schools.com/" alt="google">w3school</a>
+    <p>a link color,
+        visited link color,
+        active link color</p>
+    <h2>input types</h2><input type="text">
+    <p>text input type :focus -outline</p>
+    <h2>list</h2>
+    <p>first child,
+        last child,
+        nth child(odd, even, 3n)</p>
+    <ul>
+        <li>bavi</li>
+        <li>gavi</li>
+        <li>kavi</li>
+        <li>ravi</li>
+        <li>bavi</li>
+        <li>gavi</li>
+        <li>kavi</li>
+    </ul><button>save</button><button class="disabled">delete</button>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+        vel impedit reprehenderit harum laudantium fugiat delectus cumque excepturi sapiente molestias animi alias
+        quisquam voluptatibus molestiae dolor,
+        consequuntur inventore error non !</p>
+    <input typr="text" placeholder="enter your name">
 </body>
 
 </html>
