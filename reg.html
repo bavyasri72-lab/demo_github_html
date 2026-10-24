@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second day</title>
+</head>
+
+<body>
+    <form action="hi.html">
+        <fieldset>
+            <legend>form</legend>
+            <center>
+                <table>
+                    <tr>
+                        <th>STUDENT REGISTRATION
+                        </th>
+                    </tr>
+                    <tr>
+                        <td><label for="name">NAME:</label></td>
+                        <td> <input type="text" placeholder="Enter your name" id="name" required><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="g">GENDER: </label></td>
+                        <td><input type="radio" name="GENDER" id="g">male<input type="radio" name="GENDER" id="g"
+                                required>female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="d">D.O.B: </label></td>
+                        <td> <input type="date" id="d" required><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="p">PASSWORD:</label></td>
+                        <td> <INPUT type="password" id="p" required placeholder="enter your password" minlength="6"
+                                maxlength="8"><br></td>
+                    </tr>
+                    <tr>
+                        <td> <label for="A">AGE:</label></td>
+                        <td> <input type="number" placeholder="age" id="A" min="18" max="60" required><br></td>
+                    </tr>
+                    <tr>
+                        <td> <label for="E">EMAIL</label></td>
+                        <td><input type="email" placeholder="enter your email" id="E" required></td>
+                    </tr>
+                    <tr>
+                        <td> <label for="P">PHONE NUMBER</label></td>
+                        <td> <input type="tel" maxlength="10" id="P" placeholder="mobile number" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="D">DEPARTMENT</label></td>
+                        <td><select id="D" required>
+                                <option selected value="course" disabled>dept</option>
+                                <optgroup label="science">
+
+                                    <option>cs
+                                    </option>
+                                    <option>che</option>
+                                </optgroup>
+                                <optgroup label="arts">
+                                    <option>tamil</option>
+                                    <option>english</option>
+                                </optgroup>
+                            </select> </td>
+                    </tr>
+                    <tr>
+                        <td><label for="S">SUBJECTS</label></td>
+                        <td><input type="checkbox" name="SUB" id="S">java<input type="checkbox" name="sub" id="S">css
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="datetime">DATETIME</label>
+                        </td>
+                        <td><input id="datetime" type="datetime-local" required> </td>
+                    </tr>
+                    <tr>
+                        <td><label for="week">WEEK</label></td>
+                        <td><input id="week" type="week" required></td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mon">MONTH</label>
+                        </td>
+                        <td><input id="mon" type="month" required></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="ti">TIME</label>
+                        <td><input id="ti" type="time" required></td>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="file"> DOCUMENTS</label>
+                        </td>
+                        <td><input type="file" id="file" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit"></td>
+                        <td> <input type="reset"></td>
+                    </tr>
+                </table>
+            </center>
+        </fieldset>
+    </form>

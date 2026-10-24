@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
-            background-color: pink;
-        }
-
         h1:hover {
             color: bisque;
             background-color: blue;
@@ -32,8 +28,15 @@
             outline: 2px dotted red;
         }
 
-        .pseudo li:first-child {
+        #orderlist li:first-child {
             color: blue;
+        }
+        #orderlist li:last-child{
+            color:red
+        }
+        #orderlist li:nth-of-type(2n+1){
+            font-style: italic;
+            text-transform: uppercase;
         }
 
         button:not(.disabled) {
@@ -49,16 +52,16 @@
             color: darkgreen;
         }
 
-        ul li::marker {
+        .list li::marker {
             color: red;
             font-size: 30px;
         }
 
-        ul li::before {
+        .list li::before {
             content: "🌐";
         }
 
-        ul li::after {
+        .list li::after {
             content: "✋";
         }
 
@@ -66,6 +69,35 @@
             color: bisque;
             background-color: black;
         }
+
+        div {
+            background-color: purple;
+            width: 100px;
+            height: 100px;
+            border: 5px solid red;
+            border-radius: 50px 50px 50px 50px;
+            box-shadow: 0px 0px 70px black;
+            border-top-right-radius: 50px;
+        }
+
+        .par {
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+            font-variant: small-caps;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+body{
+    background: url("https://www.shutterstock.com/image-photo/tom-jerry-character-260nw-2673798779.jpg");
+    background-repeat: no-repeat;
+    border:2px dotted red;
+    background-position: top center;
+    background-size:contain;
+    background-attachment: fixed;
+}
+     
+        
     </style>
 
 </head>
@@ -81,11 +113,11 @@
         active link color</p>
     <h2>input types</h2><input type="text">
     <p>text input type :focus -outline</p>
-    <h2>list</h2>
+    <h3>list</h2>
     <p>first child,
         last child,
         nth child(odd, even, 3n)</p>
-    <ul>
+    <ul id="orderlist">
         <li>bavi</li>
         <li>gavi</li>
         <li>kavi</li>
@@ -94,11 +126,33 @@
         <li>gavi</li>
         <li>kavi</li>
     </ul><button>save</button><button class="disabled">delete</button>
+
+    <h3>pseudo element(::)</h3>
+    <p>first letter ,first line,marker(bullets ah style pana),before,after,placeholder.</p>
     <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
         vel impedit reprehenderit harum laudantium fugiat delectus cumque excepturi sapiente molestias animi alias
         quisquam voluptatibus molestiae dolor,
         consequuntur inventore error non !</p>
+        <ul class="list">
+         <li>bavi</li>
+        <li>gavi</li>
+        <li>kavi</li>
+        <li>ravi</li>
+        </ul>
     <input typr="text" placeholder="enter your name">
+    <br>
+    <br>
+    <h3>border properties</h3>
+    <div>
+
+    </div>
+    <h3>font properties</h3>
+    <p class="par">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <br>
+    <br>
+    <h3>background properties</h3>
+
+
 </body>
 
 </html>
